@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/miniCookieProjuct.css">
+</head>
+<body>
+    <div class="wrapper">
+        <p>Your Username: <span id="cookieVal"></span></p>
+    </div>
+    <a href="startPage.html">
+        <button style="width: 50px;">Start</button>
+    </a>
+      
+
+    <script src="js/miniCookieProject.js"></script>
+
+
+    <script>
+        window.onload= function(){
+            var cookieValue = getCookie();
+
+            document.getElementById("cookieVal").innerHTML = cookieValue;
+        }
+    </script>
+</body>
+</html>
